@@ -1,0 +1,6 @@
+Okos otthon kiépítése
+Egy intelligens rendszer felállítása az alábbi folyamatok sorából áll:
+Ki kell választani a megfelelő kivitelezőt,
+a megfelelő eszközöket, applikációkat,
+a vezérlés tipusát,
+majd meg kell tervezni az egész rendszert

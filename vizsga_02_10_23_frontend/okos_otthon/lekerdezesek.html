@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<title>Okos otthon</title>
+
+	<link rel="stylesheet" href="./okosotthon.css">
+
+    <script src="jquery.min.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="./lekerdezesek.js"></script>
+    
+</head>
+
+<body lang="hu">
+	<header class="fejlec">
+		<div class="container h-100">
+			<img src="fejlec1.jpg" alt="Okos otthon" class="img-fluid w-100">
+		</div>
+	</header>
+
+	<div class="container h-100">
+
+		<!-- Navigáció -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary my-1">
+			<div class="" id="navbarNav">
+				<ul class="navbar-nav text-white">
+					<li class="nav-item text-white">
+						<a class="nav-link" href="./okosotthon.html">Főoldal</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+        <section>
+            <form onsubmit="reqIsServerUp(event)">
+                <label for="check-server-status-btn">A szerver státuszának lekérdezése</label>
+                <button class="btn border border-solid" id="check-server-status-btn" type="submit">Check Server</button>
+            </form>
+
+            <p id="server-status-container" ></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <form onsubmit="reqNapelemekList(event)">
+                <label for="get-napelemek-list-btn">A napelemek lista lekérdezése</label>
+                <button class="btn border border-solid" id="get-napelemek-list-btn" type="submit">Napelemek lekérdezése</button>
+            </form>
+
+            <div id="napelemek-list-container"></div>
+        </section>
+
+	</div>
+	<div class="jumbotron text-center py-3 mt-5">
+		<h4>Szoftverfejlesztő és tesztelő feladatsor</h4>
+	</div>
+</body>
+
+</html>
